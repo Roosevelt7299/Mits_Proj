@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 // ── Kumari Images ──
 import heroBanner    from './images/Kumari_/Kumari main screen.png';
 import splashImg     from './images/Kumari_/kumari splash 2.png';
+import bgRefImg      from './images/Kumari_/Bg_ref.png';
 import nilaImg       from './images/Kumari_/Nila 3.png';
 import kathirImg     from './images/Kumari_/Kathir 3.png';
 import charSheet1    from './images/Kumari_/2.png';
@@ -48,6 +49,8 @@ const style = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
   .kp-root {
+    position: relative;
+    isolation: isolate;
     background-color: #0c0909;
     background-image:
       repeating-radial-gradient(
@@ -62,8 +65,23 @@ const style = `
     font-family: 'Barlow', sans-serif;
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: 100%;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .kp-root::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--kumari-bg);
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100% auto;
+    opacity: 0.15;
+    filter: grayscale(0.6);
+    pointer-events: none;
   }
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: #111; }
@@ -101,6 +119,7 @@ const style = `
   /* ── HERO ── */
   .kp-hero {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     height: 100dvh;
@@ -179,7 +198,7 @@ const style = `
 
   /* ── SECTIONS ── */
   .kp-section { padding: 72px 60px; max-width: 1100px; margin: 0 auto; }
-  .kp-section-wrap { width: 100%; background: transparent; }
+  .kp-section-wrap { position: relative; z-index: 1; width: 100%; background: transparent; }
   .kp-section-full { padding: 80px 0; }
 
   /* ── DECORATIVE HEADING ── */
@@ -346,6 +365,8 @@ const style = `
 
   /* ── FOOTER ── */
   .kp-footer {
+    position: relative;
+    z-index: 1;
     padding: calc(32px + env(safe-area-inset-bottom, 0px)) 60px 32px;
     border-top: 1px solid rgba(255,255,255,0.06);
     display: flex;
@@ -562,7 +583,7 @@ export default function KumariPage() {
   return (
     <>
       <style>{style}</style>
-      <div className="kp-root">
+      <div className="kp-root" style={{ '--kumari-bg': `url("${bgRefImg}")` }}>
 
         {/* ── FIXED NAV ── */}
         <nav className="kp-nav">
