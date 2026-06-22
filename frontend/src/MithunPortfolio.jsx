@@ -7,29 +7,30 @@ import animationImg from "./images/animation.png";
 import backgroundImg from "./images/background.png";
 import avatarImg from "./images/avatar.png";
 import animationVideo from "./images/Animation_works/Projecct42 - Animation.mp4";
+import bgRefImg from "./images/Bg_ref.png";
 
 // ── Character Art Gallery Images ──
-import caImg1  from "./images/Character_art/arthur.png";
-import caImg2  from "./images/Character_art/hime.png";
-import caImg3  from "./images/Character_art/Jinx 2.png";
-import caImg4  from "./images/Character_art/Kate bishop.png";
-import caImg5  from "./images/Character_art/shami.png";
-import caImg6  from "./images/Character_art/Visitor full view 1.png";
-import caImg7  from "./images/Character_art/original character 2.png";
-import caImg8  from "./images/Character_art/Jinx.png";
-import caImg9  from "./images/Character_art/Visitor full view 2.png";
+import caImg1 from "./images/Character_art/arthur.png";
+import caImg2 from "./images/Character_art/hime.png";
+import caImg3 from "./images/Character_art/Jinx 2.png";
+import caImg4 from "./images/Character_art/Kate bishop.png";
+import caImg5 from "./images/Character_art/shami.png";
+import caImg6 from "./images/Character_art/Visitor full view 1.png";
+import caImg7 from "./images/Character_art/original character 2.png";
+import caImg8 from "./images/Character_art/Jinx.png";
+import caImg9 from "./images/Character_art/Visitor full view 2.png";
 import caImg10 from "./images/Character_art/original character.png";
 
 // ── Kumari Gallery Images ──
-import kImg1  from "./images/Kumari_/Kumari main screen.png";
-import kImg2  from "./images/Kumari_/kumari splash 2.png";
-import kImg3  from "./images/Kumari_/city bg1.png";
-import kImg4  from "./images/Kumari_/Clouds scenery final 3.png";
-import kImg5  from "./images/Kumari_/Half tower - cliff zoom out shot 4.png";
-import kImg6  from "./images/Kumari_/Horse reunited 2.png";
-import kImg7  from "./images/Kumari_/Horse statue bg 1.png";
-import kImg8  from "./images/Kumari_/Kathir looks down 1.png";
-import kImg9  from "./images/Kumari_/Screenshot (410).png";
+import kImg1 from "./images/Kumari_/Kumari main screen.png";
+import kImg2 from "./images/Kumari_/kumari splash 2.png";
+import kImg3 from "./images/Kumari_/city bg1.png";
+import kImg4 from "./images/Kumari_/Clouds scenery final 3.png";
+import kImg5 from "./images/Kumari_/Half tower - cliff zoom out shot 4.png";
+import kImg6 from "./images/Kumari_/Horse reunited 2.png";
+import kImg7 from "./images/Kumari_/Horse statue bg 1.png";
+import kImg8 from "./images/Kumari_/Kathir looks down 1.png";
+import kImg9 from "./images/Kumari_/Screenshot (410).png";
 import kImg10 from "./images/Kumari_/Tower bg establishing.png";
 import kImg11 from "./images/Kumari_/The Third Chennai process 3.png";
 import kImg12 from "./images/Kumari_/Abi announcement 1.png";
@@ -41,15 +42,15 @@ import kImg17 from "./images/Kumari_/Nila 3.png";
 import kImg18 from "./images/Kumari_/Skills final png.png";
 
 // ── Concept & 2D Art Gallery Images ──
-import c2dImg1  from "./images/Concept&2D_Art/Archetype exploration 2.png";
-import c2dImg2  from "./images/Concept&2D_Art/Artboard 1.png";
-import c2dImg3  from "./images/Concept&2D_Art/Artboard 2.png";
-import c2dImg4  from "./images/Concept&2D_Art/Artboard 5.png";
-import c2dImg5  from "./images/Concept&2D_Art/Artboard 6.png";
-import c2dImg6  from "./images/Concept&2D_Art/Artboard 8.png";
-import c2dImg7  from "./images/Concept&2D_Art/Ben stokes Character Art copy.png";
-import c2dImg8  from "./images/Concept&2D_Art/Character sheet 1.png";
-import c2dImg9  from "./images/Concept&2D_Art/Character sheet Bhanu.png";
+import c2dImg1 from "./images/Concept&2D_Art/Archetype exploration 2.png";
+import c2dImg2 from "./images/Concept&2D_Art/Artboard 1.png";
+import c2dImg3 from "./images/Concept&2D_Art/Artboard 2.png";
+import c2dImg4 from "./images/Concept&2D_Art/Artboard 5.png";
+import c2dImg5 from "./images/Concept&2D_Art/Artboard 6.png";
+import c2dImg6 from "./images/Concept&2D_Art/Artboard 8.png";
+import c2dImg7 from "./images/Concept&2D_Art/Ben stokes Character Art copy.png";
+import c2dImg8 from "./images/Concept&2D_Art/Character sheet 1.png";
+import c2dImg9 from "./images/Concept&2D_Art/Character sheet Bhanu.png";
 import c2dImg10 from "./images/Concept&2D_Art/Custom red 1.png";
 import c2dImg11 from "./images/Concept&2D_Art/Mandala asset.png";
 import c2dImg12 from "./images/Concept&2D_Art/Queen redesign colours.png";
@@ -68,15 +69,15 @@ import c2dImg24 from "./images/Concept&2D_Art/Spirit card final.png";
 import c2dImg25 from "./images/Concept&2D_Art/SpiritCard png.png";
 
 // ── Illustrations Gallery Images ──
-import illImg1  from "./images/Illustrations/1 copy.png";
-import illImg2  from "./images/Illustrations/2 copy.png";
-import illImg3  from "./images/Illustrations/2099 copy.png";
-import illImg4  from "./images/Illustrations/3 copy.png";
-import illImg5  from "./images/Illustrations/4 copy.png";
-import illImg6  from "./images/Illustrations/5 copy.png";
-import illImg7  from "./images/Illustrations/6 copy.png";
-import illImg8  from "./images/Illustrations/7 copy.png";
-import illImg9  from "./images/Illustrations/Art style 1 copy.png";
+import illImg1 from "./images/Illustrations/1 copy.png";
+import illImg2 from "./images/Illustrations/2 copy.png";
+import illImg3 from "./images/Illustrations/2099 copy.png";
+import illImg4 from "./images/Illustrations/3 copy.png";
+import illImg5 from "./images/Illustrations/4 copy.png";
+import illImg6 from "./images/Illustrations/5 copy.png";
+import illImg7 from "./images/Illustrations/6 copy.png";
+import illImg8 from "./images/Illustrations/7 copy.png";
+import illImg9 from "./images/Illustrations/Art style 1 copy.png";
 import illImg10 from "./images/Illustrations/Bonnie copy 2.png";
 import illImg11 from "./images/Illustrations/Cafe sky copy.png";
 import illImg12 from "./images/Illustrations/Ceasar copy.png";
@@ -91,92 +92,92 @@ import illImg16 from "./images/Illustrations/war.png";
 // Row C: 2 mixed landscape — Visitor full view 1, original character 2
 // Row D: 3 portrait — Jinx (9:16), Visitor full view 2 (2:3), original character (~3:4)
 const CHARACTER_ART_GALLERY = [
-  { src: caImg1,  label: "Arthur",                layout: "standard", w: 1920, h: 1080 },
-  { src: caImg2,  label: "Hime",                  layout: "standard", w: 1920, h: 1080 },
-  { src: caImg3,  label: "Jinx II",               layout: "standard", w: 1920, h: 1080 },
-  { src: caImg4,  label: "Kate Bishop",           layout: "standard", w: 1920, h: 1080 },
-  { src: caImg5,  label: "Shami",                 layout: "standard", w: 1920, h: 1080 },
-  { src: caImg6,  label: "Visitor — Full View",   layout: "banner",   w: 2611, h: 1639 },
-  { src: caImg7,  label: "Original Character II", layout: "banner",   w: 2333, h: 1695 },
-  { src: caImg8,  label: "Jinx",                  layout: "portrait", w: 1080, h: 1920 },
-  { src: caImg9,  label: "Visitor — Full View II",layout: "portrait", w: 2611, h: 4000 },
-  { src: caImg10, label: "Original Character",    layout: "portrait", w: 2480, h: 3508 },
+  { src: caImg1, label: "Arthur", layout: "standard", w: 1920, h: 1080 },
+  { src: caImg2, label: "Hime", layout: "standard", w: 1920, h: 1080 },
+  { src: caImg3, label: "Jinx II", layout: "standard", w: 1920, h: 1080 },
+  { src: caImg4, label: "Kate Bishop", layout: "standard", w: 1920, h: 1080 },
+  { src: caImg5, label: "Shami", layout: "standard", w: 1920, h: 1080 },
+  { src: caImg6, label: "Visitor — Full View", layout: "banner", w: 2611, h: 1639 },
+  { src: caImg7, label: "Original Character II", layout: "banner", w: 2333, h: 1695 },
+  { src: caImg8, label: "Jinx", layout: "portrait", w: 1080, h: 1920 },
+  { src: caImg9, label: "Visitor — Full View II", layout: "portrait", w: 2611, h: 4000 },
+  { src: caImg10, label: "Original Character", layout: "portrait", w: 2480, h: 3508 },
 ];
 
 // ── Concept & 2D Art Gallery (25 images, layouts + dimensions verified) ──
 const CONCEPT_2D_GALLERY = [
   // [0-5] Artboard / exploration panels — all 16:9 except AB8 which is ~2:1
-  { src: c2dImg2,  label: "Artboard 1",              layout: "standard", group: "artboards", w: 1920, h: 1080 },
-  { src: c2dImg3,  label: "Artboard 2",              layout: "standard", group: "artboards", w: 1920, h: 1080 },
-  { src: c2dImg4,  label: "Artboard 5",              layout: "standard", group: "artboards", w: 1920, h: 1080 },
-  { src: c2dImg5,  label: "Artboard 6",              layout: "standard", group: "artboards", w: 1920, h: 1080 },
-  { src: c2dImg6,  label: "Artboard 8",              layout: "banner",   group: "artboards", w: 2149, h: 1080 },
-  { src: c2dImg1,  label: "Archetype Exploration",   layout: "standard", group: "artboards", w: 1920, h: 1080 },
+  { src: c2dImg2, label: "Artboard 1", layout: "standard", group: "artboards", w: 1920, h: 1080 },
+  { src: c2dImg3, label: "Artboard 2", layout: "standard", group: "artboards", w: 1920, h: 1080 },
+  { src: c2dImg4, label: "Artboard 5", layout: "standard", group: "artboards", w: 1920, h: 1080 },
+  { src: c2dImg5, label: "Artboard 6", layout: "standard", group: "artboards", w: 1920, h: 1080 },
+  { src: c2dImg6, label: "Artboard 8", layout: "banner", group: "artboards", w: 2149, h: 1080 },
+  { src: c2dImg1, label: "Archetype Exploration", layout: "standard", group: "artboards", w: 1920, h: 1080 },
   // [6-8] Character sheets — Sheet1=16:9, Bhanu=~4:3 landscape, BenStokes=portrait
-  { src: c2dImg8,  label: "Character Sheet 1",       layout: "standard", group: "sheets",   w: 3840, h: 2160 },
-  { src: c2dImg9,  label: "Character Sheet — Bhanu", layout: "standard", group: "sheets",   w: 4961, h: 3508 },
-  { src: c2dImg7,  label: "Ben Stokes Character Art",layout: "portrait", group: "sheets",   w: 2400, h: 4000 },
+  { src: c2dImg8, label: "Character Sheet 1", layout: "standard", group: "sheets", w: 3840, h: 2160 },
+  { src: c2dImg9, label: "Character Sheet — Bhanu", layout: "standard", group: "sheets", w: 4961, h: 3508 },
+  { src: c2dImg7, label: "Ben Stokes Character Art", layout: "portrait", group: "sheets", w: 2400, h: 4000 },
   // [9-18] Process screenshots — all 1920x1080 (16:9)
-  { src: c2dImg14, label: "Process 209",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg15, label: "Process 210",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg16, label: "Process 211",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg17, label: "Process 212",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg18, label: "Process 213",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg19, label: "Process 214",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg20, label: "Process 215",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg21, label: "Process 216",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg22, label: "Process 220",             layout: "standard", group: "process",  w: 1920, h: 1080 },
-  { src: c2dImg23, label: "Process 221",             layout: "standard", group: "process",  w: 1920, h: 1080 },
+  { src: c2dImg14, label: "Process 209", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg15, label: "Process 210", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg16, label: "Process 211", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg17, label: "Process 212", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg18, label: "Process 213", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg19, label: "Process 214", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg20, label: "Process 215", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg21, label: "Process 216", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg22, label: "Process 220", layout: "standard", group: "process", w: 1920, h: 1080 },
+  { src: c2dImg23, label: "Process 221", layout: "standard", group: "process", w: 1920, h: 1080 },
   // [19-24] Miscellaneous
-  { src: c2dImg10, label: "Custom Red",              layout: "standard", group: "misc",     w: 3508, h: 2480 },
-  { src: c2dImg11, label: "Mandala Asset",           layout: "standard", group: "misc",     w: 1920, h: 1080 },
-  { src: c2dImg12, label: "Queen Redesign Colours",  layout: "standard", group: "misc",     w: 1920, h: 1080 },
-  { src: c2dImg13, label: "Queen Turntable",         layout: "standard", group: "misc",     w: 1920, h: 1080 },
-  { src: c2dImg24, label: "Spirit Card Final",       layout: "standard", group: "misc",     w: 1920, h: 1080 },
-  { src: c2dImg25, label: "Spirit Card",             layout: "portrait", group: "misc",     w: 1560, h: 2432 },
+  { src: c2dImg10, label: "Custom Red", layout: "standard", group: "misc", w: 3508, h: 2480 },
+  { src: c2dImg11, label: "Mandala Asset", layout: "standard", group: "misc", w: 1920, h: 1080 },
+  { src: c2dImg12, label: "Queen Redesign Colours", layout: "standard", group: "misc", w: 1920, h: 1080 },
+  { src: c2dImg13, label: "Queen Turntable", layout: "standard", group: "misc", w: 1920, h: 1080 },
+  { src: c2dImg24, label: "Spirit Card Final", layout: "standard", group: "misc", w: 1920, h: 1080 },
+  { src: c2dImg25, label: "Spirit Card", layout: "portrait", group: "misc", w: 1560, h: 2432 },
 ];
 
 // ── Illustrations Gallery (16 images) ──
 // w/h = ACTUAL pixel dimensions measured from disk — drives aspect-ratio per cell
 const ILLUSTRATIONS_GALLERY = [
-  { src: illImg1,  label: "Illustration 1",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg2,  label: "Illustration 2",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg3,  label: "2099",            w: 2250, h: 3399 },  // portrait
-  { src: illImg4,  label: "Illustration 3",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg5,  label: "Illustration 4",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg6,  label: "Illustration 5",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg7,  label: "Illustration 6",  w: 1920, h: 1080 },  // landscape 16:9
-  { src: illImg8,  label: "Illustration 7",  w: 2480, h: 3508 },  // portrait
-  { src: illImg9,  label: "Art Style Study", w: 1000, h: 1000 },  // square
-  { src: illImg10, label: "Bonnie",          w: 2327, h: 3265 },  // portrait
-  { src: illImg11, label: "Café Sky",        w: 4500, h: 10000 }, // very tall portrait
-  { src: illImg12, label: "Caesar",          w: 1920, h: 961  },  // landscape ~2:1
-  { src: illImg13, label: "Cozy",            w: 4000, h: 4000 },  // square
-  { src: illImg14, label: "Demogorgon",      w: 2775, h: 3907 },  // portrait
-  { src: illImg15, label: "Saarpatta",       w: 3000, h: 4000 },  // portrait
-  { src: illImg16, label: "War",             w: 4000, h: 4000 },  // square
+  { src: illImg1, label: "Illustration 1", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg2, label: "Illustration 2", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg3, label: "2099", w: 2250, h: 3399 },  // portrait
+  { src: illImg4, label: "Illustration 3", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg5, label: "Illustration 4", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg6, label: "Illustration 5", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg7, label: "Illustration 6", w: 1920, h: 1080 },  // landscape 16:9
+  { src: illImg8, label: "Illustration 7", w: 2480, h: 3508 },  // portrait
+  { src: illImg9, label: "Art Style Study", w: 1000, h: 1000 },  // square
+  { src: illImg10, label: "Bonnie", w: 2327, h: 3265 },  // portrait
+  { src: illImg11, label: "Café Sky", w: 4500, h: 10000 }, // very tall portrait
+  { src: illImg12, label: "Caesar", w: 1920, h: 961 },  // landscape ~2:1
+  { src: illImg13, label: "Cozy", w: 4000, h: 4000 },  // square
+  { src: illImg14, label: "Demogorgon", w: 2775, h: 3907 },  // portrait
+  { src: illImg15, label: "Saarpatta", w: 3000, h: 4000 },  // portrait
+  { src: illImg16, label: "War", w: 4000, h: 4000 },  // square
 ];
 
 // layout: 'wide' = ultrawide 21:9, 'square' = 1:1, 'portrait' = tall, 'standard' = 16:9, 'banner' = short wide, 'panorama' = super wide
 const KUMARI_GALLERY = [
-  { src: kImg1,  label: "Kumari Main Screen",         layout: "standard"  },
-  { src: kImg2,  label: "Kumari Splash",              layout: "banner"    },
-  { src: kImg3,  label: "City Background",            layout: "wide"      },
-  { src: kImg4,  label: "Clouds Scenery",             layout: "wide"      },
-  { src: kImg5,  label: "Half Tower Cliff",           layout: "wide"      },
-  { src: kImg6,  label: "Horse Reunited",             layout: "wide"      },
-  { src: kImg7,  label: "Horse Statue BG",            layout: "wide"      },
-  { src: kImg8,  label: "Kathir Looks Down",          layout: "wide"      },
-  { src: kImg9,  label: "Screenshot",                layout: "wide"      },
-  { src: kImg10, label: "Tower BG Establishing",      layout: "wide"      },
-  { src: kImg11, label: "The Third Chennai Process",  layout: "wide"      },
-  { src: kImg12, label: "Abi Announcement",           layout: "square"    },
-  { src: kImg13, label: "Sid Announcement",           layout: "square"    },
-  { src: kImg14, label: "Voice Acting Post 1",        layout: "square"    },
-  { src: kImg15, label: "Voice Acting Post 2",        layout: "square"    },
-  { src: kImg16, label: "Kathir",                     layout: "portrait"  },
-  { src: kImg17, label: "Nila",                       layout: "portrait"  },
-  { src: kImg18, label: "Skills",                     layout: "standard"  },
+  { src: kImg1, label: "Kumari Main Screen", layout: "standard" },
+  { src: kImg2, label: "Kumari Splash", layout: "banner" },
+  { src: kImg3, label: "City Background", layout: "wide" },
+  { src: kImg4, label: "Clouds Scenery", layout: "wide" },
+  { src: kImg5, label: "Half Tower Cliff", layout: "wide" },
+  { src: kImg6, label: "Horse Reunited", layout: "wide" },
+  { src: kImg7, label: "Horse Statue BG", layout: "wide" },
+  { src: kImg8, label: "Kathir Looks Down", layout: "wide" },
+  { src: kImg9, label: "Screenshot", layout: "wide" },
+  { src: kImg10, label: "Tower BG Establishing", layout: "wide" },
+  { src: kImg11, label: "The Third Chennai Process", layout: "wide" },
+  { src: kImg12, label: "Abi Announcement", layout: "square" },
+  { src: kImg13, label: "Sid Announcement", layout: "square" },
+  { src: kImg14, label: "Voice Acting Post 1", layout: "square" },
+  { src: kImg15, label: "Voice Acting Post 2", layout: "square" },
+  { src: kImg16, label: "Kathir", layout: "portrait" },
+  { src: kImg17, label: "Nila", layout: "portrait" },
+  { src: kImg18, label: "Skills", layout: "standard" },
 ];
 
 const API_URL = "http://localhost:5000/api";
@@ -207,7 +208,7 @@ const style = `
     --safe-right: env(safe-area-inset-right, 0px);
   }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-  body { background: var(--dark); color: var(--text); font-family: 'Century Gothic', sans-serif; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+  body { background-color: var(--dark); background-image: url("${bgRefImg}"); background-repeat: repeat; background-position: top center; background-size: 100% auto; color: var(--text); font-family: 'Century Gothic', sans-serif; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--dark); }
   ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
@@ -238,7 +239,7 @@ const style = `
   .section { padding: 100px 0; }
   .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 80px 0 100px; }
 
-  .kumari-section { background: var(--dark); }
+  .kumari-section { background: transparent; }
   .kumari-section .section-inner { max-width: 1400px; padding-left: 120px; }
   .kumari-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 80px; align-items: center; }
   .trailer-card { position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; cursor: pointer; border-radius: 12px; box-shadow: 0 24px 48px rgba(0,0,0,0.6); }
@@ -255,7 +256,7 @@ const style = `
   .btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .works-title-wrap { position: relative; text-align: center; margin-bottom: 40px; overflow: hidden; padding: 20px 0; }
-  .works-bg-text { font-family: 'Druk Condensed', sans-serif; font-size: clamp(60px, 12vw, 140px); color: transparent; -webkit-text-stroke: 1px rgba(255,184,0,.12); letter-spacing: 8px; line-height: 1; user-select: none; }
+  .works-bg-text { font-family: 'Druk Condensed', sans-serif; font-size: clamp(60px, 12vw, 140px); color: transparent; -webkit-text-stroke: 1px rgba(255,184,0,.5); letter-spacing: 8px; line-height: 1; user-select: none; }
   .works-script-over { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%); font-family: 'Caveat', cursive; font-size: clamp(22px, 4vw, 42px); color: var(--gold); white-space: nowrap; }
 
   /* ── ACCORDION CARDS ── */
@@ -755,7 +756,7 @@ const style = `
   }
   .ill-masonry-item:hover .ill-masonry-exp { opacity: 1; }
 
-  .about-section { background: var(--dark); }
+  .about-section { background: transparent; }
   .about-grid { display: grid; grid-template-columns: 0.85fr 1.4fr; gap: 100px; align-items: center; }
   .about-avatar-wrap { display: flex; justify-content: center; align-items: center; position: relative; padding: 20px 0; min-height: 0; transform: translateX(-15%); }
   .about-avatar-wrap::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 240px; height: 50px; background: radial-gradient(ellipse, rgba(255,184,0,.30) 0%, transparent 70%); filter: blur(12px); pointer-events: none; }
@@ -984,19 +985,19 @@ export default function MithunPortfolio() {
       }
       if (illViewerIdx !== null) {
         if (e.key === "ArrowRight") setIllViewerIdx(i => (i + 1) % ILLUSTRATIONS_GALLERY.length);
-        if (e.key === "ArrowLeft")  setIllViewerIdx(i => (i - 1 + ILLUSTRATIONS_GALLERY.length) % ILLUSTRATIONS_GALLERY.length);
+        if (e.key === "ArrowLeft") setIllViewerIdx(i => (i - 1 + ILLUSTRATIONS_GALLERY.length) % ILLUSTRATIONS_GALLERY.length);
       }
       if (c2dViewerIdx !== null) {
         if (e.key === "ArrowRight") setC2dViewerIdx(i => (i + 1) % CONCEPT_2D_GALLERY.length);
-        if (e.key === "ArrowLeft")  setC2dViewerIdx(i => (i - 1 + CONCEPT_2D_GALLERY.length) % CONCEPT_2D_GALLERY.length);
+        if (e.key === "ArrowLeft") setC2dViewerIdx(i => (i - 1 + CONCEPT_2D_GALLERY.length) % CONCEPT_2D_GALLERY.length);
       }
       if (caViewerIdx !== null) {
         if (e.key === "ArrowRight") setCaViewerIdx(i => (i + 1) % CHARACTER_ART_GALLERY.length);
-        if (e.key === "ArrowLeft")  setCaViewerIdx(i => (i - 1 + CHARACTER_ART_GALLERY.length) % CHARACTER_ART_GALLERY.length);
+        if (e.key === "ArrowLeft") setCaViewerIdx(i => (i - 1 + CHARACTER_ART_GALLERY.length) % CHARACTER_ART_GALLERY.length);
       }
       if (viewerIdx !== null) {
         if (e.key === "ArrowRight") setViewerIdx(i => (i + 1) % KUMARI_GALLERY.length);
-        if (e.key === "ArrowLeft")  setViewerIdx(i => (i - 1 + KUMARI_GALLERY.length) % KUMARI_GALLERY.length);
+        if (e.key === "ArrowLeft") setViewerIdx(i => (i - 1 + KUMARI_GALLERY.length) % KUMARI_GALLERY.length);
       }
     };
     window.addEventListener("keydown", handleKey);
@@ -1101,7 +1102,7 @@ export default function MithunPortfolio() {
                   <div className="kl-stitle-bg">KUMARI KANDAM</div>
                   <div className="kl-stitle-fg">Kumari Kandam</div>
                 </div>
-                
+
                 <p className="kl-text">
                   An animated feature following Kumari — a young warrior navigating the mythic lost continent. A passion project blending traditional storytelling with modern 2D animation techniques, featuring original character designs and rich world-building across every frame.
                 </p>
@@ -1131,7 +1132,7 @@ export default function MithunPortfolio() {
                 <p className="kl-text">
                   In our process, every character has a character sheet detailing their turnaround, expressions, and color palettes to ensure consistency throughout the animation pipeline.
                 </p>
-                
+
                 <div className="kl-char-sheets">
                   <img src={KUMARI_GALLERY[8].src} alt="Character Sheet 1" onClick={() => setViewerIdx(8)} />
                   <img src={KUMARI_GALLERY[10].src} alt="Character Sheet 2" onClick={() => setViewerIdx(10)} />
@@ -1196,53 +1197,53 @@ export default function MithunPortfolio() {
                 */}
                 <div className="ca-masonry">
                   {/* Jinx portrait — col1, rows 1-2 */}
-                  <div className="ca-m" style={{gridColumn:1,gridRow:'1/span 2'}} onClick={()=>setCaViewerIdx(7)}>
-                    <img src={CHARACTER_ART_GALLERY[7].src} alt={CHARACTER_ART_GALLERY[7].label}/>
+                  <div className="ca-m" style={{ gridColumn: 1, gridRow: '1/span 2' }} onClick={() => setCaViewerIdx(7)}>
+                    <img src={CHARACTER_ART_GALLERY[7].src} alt={CHARACTER_ART_GALLERY[7].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[7].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[7].w}×{CHARACTER_ART_GALLERY[7].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:2,gridRow:1}} onClick={()=>setCaViewerIdx(1)}>
-                    <img src={CHARACTER_ART_GALLERY[1].src} alt={CHARACTER_ART_GALLERY[1].label}/>
+                  <div className="ca-m" style={{ gridColumn: 2, gridRow: 1 }} onClick={() => setCaViewerIdx(1)}>
+                    <img src={CHARACTER_ART_GALLERY[1].src} alt={CHARACTER_ART_GALLERY[1].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[1].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[1].w}×{CHARACTER_ART_GALLERY[1].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:3,gridRow:1}} onClick={()=>setCaViewerIdx(2)}>
-                    <img src={CHARACTER_ART_GALLERY[2].src} alt={CHARACTER_ART_GALLERY[2].label}/>
+                  <div className="ca-m" style={{ gridColumn: 3, gridRow: 1 }} onClick={() => setCaViewerIdx(2)}>
+                    <img src={CHARACTER_ART_GALLERY[2].src} alt={CHARACTER_ART_GALLERY[2].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[2].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[2].w}×{CHARACTER_ART_GALLERY[2].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:4,gridRow:'1/span 2'}} onClick={()=>setCaViewerIdx(8)}>
-                    <img src={CHARACTER_ART_GALLERY[8].src} alt={CHARACTER_ART_GALLERY[8].label}/>
+                  <div className="ca-m" style={{ gridColumn: 4, gridRow: '1/span 2' }} onClick={() => setCaViewerIdx(8)}>
+                    <img src={CHARACTER_ART_GALLERY[8].src} alt={CHARACTER_ART_GALLERY[8].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[8].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[8].w}×{CHARACTER_ART_GALLERY[8].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:2,gridRow:2}} onClick={()=>setCaViewerIdx(3)}>
-                    <img src={CHARACTER_ART_GALLERY[3].src} alt={CHARACTER_ART_GALLERY[3].label}/>
+                  <div className="ca-m" style={{ gridColumn: 2, gridRow: 2 }} onClick={() => setCaViewerIdx(3)}>
+                    <img src={CHARACTER_ART_GALLERY[3].src} alt={CHARACTER_ART_GALLERY[3].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[3].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[3].w}×{CHARACTER_ART_GALLERY[3].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:3,gridRow:2}} onClick={()=>setCaViewerIdx(4)}>
-                    <img src={CHARACTER_ART_GALLERY[4].src} alt={CHARACTER_ART_GALLERY[4].label}/>
+                  <div className="ca-m" style={{ gridColumn: 3, gridRow: 2 }} onClick={() => setCaViewerIdx(4)}>
+                    <img src={CHARACTER_ART_GALLERY[4].src} alt={CHARACTER_ART_GALLERY[4].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[4].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[4].w}×{CHARACTER_ART_GALLERY[4].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:'1/span 2',gridRow:3}} onClick={()=>setCaViewerIdx(0)}>
-                    <img src={CHARACTER_ART_GALLERY[0].src} alt={CHARACTER_ART_GALLERY[0].label}/>
+                  <div className="ca-m" style={{ gridColumn: '1/span 2', gridRow: 3 }} onClick={() => setCaViewerIdx(0)}>
+                    <img src={CHARACTER_ART_GALLERY[0].src} alt={CHARACTER_ART_GALLERY[0].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[0].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[0].w}×{CHARACTER_ART_GALLERY[0].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:3,gridRow:3}} onClick={()=>setCaViewerIdx(5)}>
-                    <img src={CHARACTER_ART_GALLERY[5].src} alt={CHARACTER_ART_GALLERY[5].label}/>
+                  <div className="ca-m" style={{ gridColumn: 3, gridRow: 3 }} onClick={() => setCaViewerIdx(5)}>
+                    <img src={CHARACTER_ART_GALLERY[5].src} alt={CHARACTER_ART_GALLERY[5].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[5].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[5].w}×{CHARACTER_ART_GALLERY[5].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:4,gridRow:3}} onClick={()=>setCaViewerIdx(6)}>
-                    <img src={CHARACTER_ART_GALLERY[6].src} alt={CHARACTER_ART_GALLERY[6].label}/>
+                  <div className="ca-m" style={{ gridColumn: 4, gridRow: 3 }} onClick={() => setCaViewerIdx(6)}>
+                    <img src={CHARACTER_ART_GALLERY[6].src} alt={CHARACTER_ART_GALLERY[6].label} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[6].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[6].w}×{CHARACTER_ART_GALLERY[6].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
-                  <div className="ca-m" style={{gridColumn:'1/span 4',gridRow:4}} onClick={()=>setCaViewerIdx(9)}>
-                    <img src={CHARACTER_ART_GALLERY[9].src} alt={CHARACTER_ART_GALLERY[9].label} style={{objectPosition:'center 15%'}}/>
+                  <div className="ca-m" style={{ gridColumn: '1/span 4', gridRow: 4 }} onClick={() => setCaViewerIdx(9)}>
+                    <img src={CHARACTER_ART_GALLERY[9].src} alt={CHARACTER_ART_GALLERY[9].label} style={{ objectPosition: 'center 15%' }} />
                     <div className="ca-m-lbl">{CHARACTER_ART_GALLERY[9].label}<span className="ca-m-dim">{CHARACTER_ART_GALLERY[9].w}×{CHARACTER_ART_GALLERY[9].h}</span></div>
                     <div className="ca-m-exp">⤢</div>
                   </div>
@@ -1253,13 +1254,13 @@ export default function MithunPortfolio() {
               <>
                 {/* Artboards — row of 3, then row of 3. Using flex layout for perfect dimension matching */}
                 <p className="kg-section-label">── Artboard Explorations</p>
-                {[[0,1,2],[3,4,5]].map((grp, ri) => (
+                {[[0, 1, 2], [3, 4, 5]].map((grp, ri) => (
                   <div key={ri} style={{ display: 'flex', gap: 6, marginBottom: 6 }}>
                     {grp.map(i => {
                       const img = CONCEPT_2D_GALLERY[i];
                       const ratio = img.w / img.h;
                       return (
-                        <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={()=>setC2dViewerIdx(i)}>
+                        <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={() => setC2dViewerIdx(i)}>
                           <img src={img.src} alt={img.label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           <div className="kg-cell-label">{img.label}<span className="kg-dim">{img.w}×{img.h}</span></div>
                           <div className="kg-expand">⤢</div>
@@ -1276,7 +1277,7 @@ export default function MithunPortfolio() {
                     const img = CONCEPT_2D_GALLERY[i];
                     const ratio = img.w / img.h;
                     return (
-                      <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={()=>setC2dViewerIdx(i)}>
+                      <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={() => setC2dViewerIdx(i)}>
                         <img src={img.src} alt={img.label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         <div className="kg-cell-label">{img.label}<span className="kg-dim">{img.w}×{img.h}</span></div>
                         <div className="kg-expand">⤢</div>
@@ -1287,11 +1288,11 @@ export default function MithunPortfolio() {
 
                 {/* Process — 2 per row */}
                 <p className="kg-section-label">── Process &amp; Development</p>
-                {[[9,10],[11,12],[13,14],[15,16],[17,18]].map((pair,ri) => (
-                  <div key={ri} className="kg-row kg-row-2" style={{marginBottom:6}}>
+                {[[9, 10], [11, 12], [13, 14], [15, 16], [17, 18]].map((pair, ri) => (
+                  <div key={ri} className="kg-row kg-row-2" style={{ marginBottom: 6 }}>
                     {pair.map(i => (
-                      <div key={i} className="kg-cell standard" onClick={()=>setC2dViewerIdx(i)}>
-                        <img src={CONCEPT_2D_GALLERY[i].src} alt={CONCEPT_2D_GALLERY[i].label}/>
+                      <div key={i} className="kg-cell standard" onClick={() => setC2dViewerIdx(i)}>
+                        <img src={CONCEPT_2D_GALLERY[i].src} alt={CONCEPT_2D_GALLERY[i].label} />
                         <div className="kg-cell-label">{CONCEPT_2D_GALLERY[i].label}<span className="kg-dim">{CONCEPT_2D_GALLERY[i].w}×{CONCEPT_2D_GALLERY[i].h}</span></div>
                         <div className="kg-expand">⤢</div>
                       </div>
@@ -1301,13 +1302,13 @@ export default function MithunPortfolio() {
 
                 {/* Misc — Using flex layout for perfect dimension matching */}
                 <p className="kg-section-label">── Miscellaneous</p>
-                {[[19,20,21], [22,23,24]].map((grp, ri) => (
+                {[[19, 20, 21], [22, 23, 24]].map((grp, ri) => (
                   <div key={ri} style={{ display: 'flex', gap: 6, marginBottom: 6 }}>
                     {grp.map(i => {
                       const img = CONCEPT_2D_GALLERY[i];
                       const ratio = img.w / img.h;
                       return (
-                        <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={()=>setC2dViewerIdx(i)}>
+                        <div key={i} className="kg-cell" style={{ flex: `${ratio} 1 0%`, aspectRatio: `${img.w} / ${img.h}` }} onClick={() => setC2dViewerIdx(i)}>
                           <img src={img.src} alt={img.label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           <div className="kg-cell-label">{img.label}<span className="kg-dim">{img.w}×{img.h}</span></div>
                           <div className="kg-expand">⤢</div>
@@ -1372,7 +1373,7 @@ export default function MithunPortfolio() {
               /* ── ANIMATION WORKS — Cinematic Player ── */
               <>
                 <p className="kg-section-label">── Featured Animation</p>
-                <div 
+                <div
                   style={{
                     position: 'relative',
                     width: '100%',
@@ -1388,7 +1389,7 @@ export default function MithunPortfolio() {
                     if (animVideoRef.current) {
                       animVideoRef.current.muted = true;
                       animVideoRef.current.currentTime = 28;
-                      animVideoRef.current.play().catch(()=>{});
+                      animVideoRef.current.play().catch(() => { });
                     }
                   }}
                   onMouseLeave={() => {
@@ -1415,7 +1416,7 @@ export default function MithunPortfolio() {
                     }}
                   />
                   <div style={{
-                    position: 'absolute', inset: 0, 
+                    position: 'absolute', inset: 0,
                     background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     pointerEvents: 'none', transition: 'background 0.3s'
@@ -1425,8 +1426,8 @@ export default function MithunPortfolio() {
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       boxShadow: '0 4px 16px rgba(255,184,0,0.4)', transition: 'transform 0.2s'
                     }}>
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="#111" style={{marginLeft: 4}}>
-                        <path d="M5 3l14 9-14 9V3z"/>
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="#111" style={{ marginLeft: 4 }}>
+                        <path d="M5 3l14 9-14 9V3z" />
                       </svg>
                     </div>
                   </div>
@@ -1435,7 +1436,7 @@ export default function MithunPortfolio() {
             ) : (
               /* Generic placeholder grid for other cards */
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
-                {[0,1,2,3].map(i => (
+                {[0, 1, 2, 3].map(i => (
                   <div key={i} className="kg-cell standard">
                     <img src={lightbox.imageUrl} alt="" style={{ objectPosition: lightbox.objectPosition }} />
                   </div>
@@ -1557,8 +1558,6 @@ export default function MithunPortfolio() {
           <source src="/reel.mp4" type="video/mp4" />
         </video>
 
-        {/* Gold box top-left */}
-        <div className="hero-amber-box" />
 
 
 
@@ -1604,7 +1603,7 @@ export default function MithunPortfolio() {
         <div className="section-inner">
           <div className="works-title-wrap">
             <div className="works-bg-text">PROJECTS AND WORKS</div>
-            <div className="works-script-over">Projects and works</div>
+            <div className="works-script-over"></div>
           </div>
         </div>
         <div className="works-grid">
