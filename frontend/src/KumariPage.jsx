@@ -51,16 +51,7 @@ const style = `
   .kp-root {
     position: relative;
     isolation: isolate;
-    background-color: #0c0909;
-    background-image:
-      repeating-radial-gradient(
-        circle at 50% 50%,
-        transparent 0px,
-        transparent 80px,
-        rgba(65, 22, 10, 0.07) 81px,
-        transparent 82px
-      );
-    background-attachment: fixed;
+    background-color: #1a1a1a;
     color: #e0d6c8;
     font-family: 'Barlow', sans-serif;
     min-height: 100vh;
@@ -74,13 +65,11 @@ const style = `
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: 0;
     background-image: var(--kumari-bg);
     background-repeat: repeat-y;
     background-position: top center;
     background-size: 100% auto;
-    opacity: 0.15;
-    filter: grayscale(0.6);
     pointer-events: none;
   }
   ::-webkit-scrollbar { width: 4px; }
