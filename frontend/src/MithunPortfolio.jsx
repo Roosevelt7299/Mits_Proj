@@ -1811,8 +1811,10 @@ export default function MithunPortfolio() {
       <footer>
         <div className="footer-logo">MITHUN</div>
         <div className="footer-links">
-          <a href="#">About</a><a href="#">Contact</a>
-          <a href="#">Works</a><a href="https://www.instagram.com/mitooonn/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#ABOUT" onClick={(e) => { e.preventDefault(); scrollTo("ABOUT"); }}>About</a>
+          <a href="#CONTACT" onClick={(e) => { e.preventDefault(); scrollTo("CONTACT"); }}>Contact</a>
+          <a href="#WORKS" onClick={(e) => { e.preventDefault(); scrollTo("WORKS"); }}>Works</a>
+          <a href="https://www.instagram.com/mitooonn/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
         <div className="footer-copy">© 2026 Mithun. All rights reserved.</div>
       </footer>
