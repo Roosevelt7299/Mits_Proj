@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import ContactForm from "./ContactForm";
 import kumariImg from "./images/Kumari.png";
 import characterImg from "./images/character.png";
 import conceptImg from "./images/concept.png";
@@ -7,8 +8,12 @@ import animationImg from "./images/animation.png";
 import backgroundImg from "./images/background.png";
 import avatarImg from "./images/avatar.png";
 import animationVideo from "./images/Animation_works/Projecct42 - Animation.mp4";
+import animationThumb from "./images/Animation_works/Projecct42 - Animation(thumbnail).png";
 import showreelVideo from "./images/Animation_works/Mithun-Showreel(2026).mp4";
+import showreelThumb from "./images/Animation_works/Mithun-Showreel(2026)(thumbnail).png";
 import kumariTrailerVideo from "./images/Animation_works/Kumari-TrailerYT.mp4";
+import kumariTrailerThumb from "./images/Animation_works/Kumari-TrailerYT(thumbnail).png";
+import Resume from "./images/Mithun-Resume-2026.pdf";
 import bgRefImg from "./images/Bg_ref.png";
 import drukFont from "./fonts/Druk-Bold-Trial.otf";
 
@@ -946,9 +951,6 @@ export default function MithunPortfolio() {
   const [activeSection, setActiveSection] = useState("HOME");
   const [works, setWorks] = useState([]);
   const [worksLoading, setWorksLoading] = useState(true);
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-  const [formStatus, setFormStatus] = useState(null);
-  const [formMsg, setFormMsg] = useState("");
   const [lightbox, setLightbox] = useState(null);
   const [activeTab, setActiveTab] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -959,6 +961,11 @@ export default function MithunPortfolio() {
   const [illViewerIdx, setIllViewerIdx] = useState(null); // fullscreen viewer index into ILLUSTRATIONS_GALLERY
   const [animViewerOpen, setAnimViewerOpen] = useState(false);
   const [activeAnimVideo, setActiveAnimVideo] = useState(null);
+
+  const download = () => {
+    window.open(Resume, "_blank");
+  };
+
   const animVideoRef1 = useRef(null);
   const animHoverRef1 = useRef(false);
   const animVideoRef2 = useRef(null);
@@ -1052,19 +1059,6 @@ export default function MithunPortfolio() {
   };
 
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  const handleFormChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-  const handleSubmit = async () => {
-    const { name, email, subject, message } = form;
-    if (!name || !email || !subject || !message) { setFormStatus("error"); setFormMsg("Please fill in all fields."); return; }
-    setFormStatus("loading");
-    try {
-      const res = await fetch(`${API_URL}/contact`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
-      const data = await res.json();
-      if (data.success) { setFormStatus("success"); setFormMsg("Message sent! I'll get back to you soon."); setForm({ name: "", email: "", subject: "", message: "" }); }
-      else throw new Error(data.message);
-    } catch (err) { setFormStatus("error"); setFormMsg(err.message || "Something went wrong."); }
-  };
 
   return (
     <>
@@ -1405,7 +1399,7 @@ export default function MithunPortfolio() {
                       animHoverRef1.current = true;
                       if (animVideoRef1.current) {
                         animVideoRef1.current.muted = true;
-                        animVideoRef1.current.currentTime = 28;
+                        animVideoRef1.current.currentTime = 0;
                         animVideoRef1.current.play().catch(() => { });
                       }
                     }}
@@ -1417,19 +1411,19 @@ export default function MithunPortfolio() {
                     }}
                     onClick={() => {
                       if (animVideoRef1.current) animVideoRef1.current.pause();
-                      setActiveAnimVideo(animationVideo);
+                      setActiveAnimVideo(showreelVideo);
                       setAnimViewerOpen(true);
                     }}
                   >
                     <video
                       ref={animVideoRef1}
-                      src={animationVideo}
-                      poster={animationImg}
+                      src={`${showreelVideo}#t=0.1`}
+                      poster={showreelThumb}
                       preload="none"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                       onTimeUpdate={(e) => {
-                        if (animHoverRef1.current && e.target.currentTime >= 35) {
-                          e.target.currentTime = 28;
+                        if (animHoverRef1.current && e.target.currentTime >= 10) {
+                          e.target.currentTime = 0;
                         }
                       }}
                     />
@@ -1461,28 +1455,31 @@ export default function MithunPortfolio() {
                         animHoverRef2.current = true;
                         if (animVideoRef2.current) {
                           animVideoRef2.current.muted = true;
-                          animVideoRef2.current.currentTime = 0;
+                          animVideoRef2.current.currentTime = 28;
                           animVideoRef2.current.play().catch(() => { });
                         }
                       }}
                       onMouseLeave={() => {
                         animHoverRef2.current = false;
-                        if (animVideoRef2.current) animVideoRef2.current.pause();
+                        if (animVideoRef2.current) {
+                          animVideoRef2.current.pause();
+                        }
                       }}
                       onClick={() => {
                         if (animVideoRef2.current) animVideoRef2.current.pause();
-                        setActiveAnimVideo(showreelVideo);
+                        setActiveAnimVideo(animationVideo);
                         setAnimViewerOpen(true);
                       }}
                     >
                       <video
                         ref={animVideoRef2}
-                        src={`${showreelVideo}#t=0.1`}
-                        preload="metadata"
+                        src={animationVideo}
+                        poster={animationThumb}
+                        preload="none"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onTimeUpdate={(e) => {
-                          if (animHoverRef2.current && e.target.currentTime >= 10) {
-                            e.target.currentTime = 0;
+                          if (animHoverRef2.current && e.target.currentTime >= 35) {
+                            e.target.currentTime = 28;
                           }
                         }}
                       />
@@ -1530,7 +1527,8 @@ export default function MithunPortfolio() {
                       <video
                         ref={animVideoRef3}
                         src={`${kumariTrailerVideo}#t=0.1`}
-                        preload="metadata"
+                        poster={kumariTrailerThumb}
+                        preload="none"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onTimeUpdate={(e) => {
                           if (animHoverRef3.current && e.target.currentTime >= 10) {
@@ -1692,7 +1690,7 @@ export default function MithunPortfolio() {
         {/* CTA buttons in the lower artwork area */}
         <div className="hero-cta">
           <button className="btn btn-gold" onClick={() => scrollTo("WORKS")}>See Work</button>
-          <button className="btn btn-outline" onClick={() => scrollTo("KUMARI")}>
+          <button className="btn btn-outline" onClick={() => { setActiveAnimVideo(showreelVideo); setAnimViewerOpen(true); }}>
             <span style={{ fontSize: 16 }}>▶</span> Play reel
           </button>
         </div>
@@ -1775,7 +1773,7 @@ export default function MithunPortfolio() {
               <div className="gold-line" />
               <p className="about-text">I'm Mithun — an animator, illustrator, and 2D artist passionate about crafting stories that breathe life into characters. With a background spanning character design, concept art, and full-length animated film production, I bring worlds to life frame by frame.</p>
               <p className="about-text">My work blends cinematic storytelling with deeply expressive character art. Whether it's an intimate character moment or a sweeping action sequence, I approach every project with meticulous attention to movement, mood, and narrative impact.</p>
-              <button className="btn btn-gold" style={{ marginTop: 8 }}>Download CV</button>
+              <button className="btn btn-gold" style={{ marginTop: 8 }} onClick={download}>Download CV</button>
             </div>
           </div>
         </div>
@@ -1788,19 +1786,11 @@ export default function MithunPortfolio() {
           <div className="contact-grid">
             <div>
               <div className="gold-line" />
-              {formStatus === "success" && <div className="form-success">{formMsg}</div>}
-              {formStatus === "error" && <div className="form-error">{formMsg}</div>}
-              <div className="form-group"><input name="name" placeholder="Your Name" value={form.name} onChange={handleFormChange} /></div>
-              <div className="form-group"><input name="email" type="email" placeholder="Email Address" value={form.email} onChange={handleFormChange} /></div>
-              <div className="form-group"><input name="subject" placeholder="Subject" value={form.subject} onChange={handleFormChange} /></div>
-              <div className="form-group"><textarea name="message" rows="5" placeholder="Your Message" value={form.message} onChange={handleFormChange} /></div>
-              <button className="btn btn-gold" onClick={handleSubmit} disabled={formStatus === "loading"} style={{ marginTop: 4 }}>
-                {formStatus === "loading" ? "Sending..." : "Send Message"}
-              </button>
+              <ContactForm />
             </div>
             <div className="contact-info">
               {[
-                { icon: "✉", label: "Email", val: "hello@mithun.art" },
+                { icon: "✉", label: "Email", val: "mithunvasu26@gmail.com" },
                 { icon: "📍", label: "Based in", val: "Chennai, India" },
                 { icon: "🎬", label: "Available for", val: "Freelance & Collaborations" },
               ].map((item) => (
@@ -1822,9 +1812,9 @@ export default function MithunPortfolio() {
         <div className="footer-logo">MITHUN</div>
         <div className="footer-links">
           <a href="#">About</a><a href="#">Contact</a>
-          <a href="#">Works</a><a href="#">Instagram</a>
+          <a href="#">Works</a><a href="https://www.instagram.com/mitooonn/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
-        <div className="footer-copy">© 2024 Mithun. All rights reserved.</div>
+        <div className="footer-copy">© 2026 Mithun. All rights reserved.</div>
       </footer>
     </>
   );
