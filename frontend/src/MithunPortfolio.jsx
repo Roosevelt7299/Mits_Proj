@@ -7,7 +7,10 @@ import animationImg from "./images/animation.png";
 import backgroundImg from "./images/background.png";
 import avatarImg from "./images/avatar.png";
 import animationVideo from "./images/Animation_works/Projecct42 - Animation.mp4";
+import showreelVideo from "./images/Animation_works/Mithun-Showreel(2026).mp4";
+import kumariTrailerVideo from "./images/Animation_works/Kumari-TrailerYT.mp4";
 import bgRefImg from "./images/Bg_ref.png";
+import drukFont from "./fonts/Druk-Bold-Trial.otf";
 
 // ── Character Art Gallery Images ──
 import caImg1 from "./images/Character_art/arthur.png";
@@ -184,7 +187,7 @@ const API_URL = "http://localhost:5000/api";
 const NAV_LINKS = ["HOME", "KUMARI", "WORKS", "ABOUT", "CONTACT"];
 
 const WORKS_DATA = [
-  { _id: "1", title: "Kumari - Animated Film", tag: "Film", description: "A warrior's journey through the mythic lost continent. A passion project blending traditional storytelling with modern 2D animation.", imageUrl: kumariImg, objectPosition: "65% center" },
+  { _id: "1", title: "Kumari - Animated Film", tag: "Film", description: "An explorer's journey through the mythic lost continent. A passion project blending traditional storytelling with modern 2D animation.", imageUrl: kumariImg, objectPosition: "65% center" },
   { _id: "2", title: "Character Art", tag: "Art", description: "Original character designs with expressive personality — from concept sketches to fully rendered illustrations.", imageUrl: characterImg, objectPosition: "76% center" },
   { _id: "3", title: "Concept & 2D Art", tag: "Concept", description: "World-building through detailed 2D concept illustrations. Every scene crafted to tell a visual story.", imageUrl: conceptImg, objectPosition: "82% center" },
   { _id: "4", title: "Animation works", tag: "Motion", description: "Fluid motion sequences with cinematic timing. Bringing characters and worlds to life frame by frame.", imageUrl: animationImg, objectPosition: "62% center" },
@@ -193,6 +196,14 @@ const WORKS_DATA = [
 
 const style = `
   @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+  @font-face {
+    font-family: 'Druk Condensed';
+    src: url('${drukFont}') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   :root {
@@ -250,13 +261,13 @@ const style = `
   .play-btn:hover { transform: translate(-50%, -50%) scale(1.12); background: red; }
   .play-btn svg { width: 22px; height: 22px; fill: white; margin-left: 4px; }
   .kumari-tag { font-family: 'Druk Condensed', sans-serif; font-size: 11px; letter-spacing: 3px; background: rgba(255,184,0,.1); border: 1px solid rgba(255,184,0,.3); display: inline-block; padding: 6px 14px; color: #FFB800; margin-bottom: 16px; }
-  .kumari-title { font-family: 'Druk Condensed', sans-serif; font-size: clamp(36px, 6vw, 72px); line-height: 1; color: #fff; margin-bottom: 20px; }
+  .kumari-title { font-family: 'Druk Condensed', sans-serif; font-size: clamp(36px, 6vw, 72px); line-height: 1; color: var(--gold); margin-bottom: 20px; }
   .kumari-title span { color: var(--gold); }
   .kumari-desc { font-size: 14px; line-height: 1.7; color: var(--muted); margin-bottom: 28px; }
   .btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .works-title-wrap { position: relative; text-align: center; margin-bottom: 40px; overflow: hidden; padding: 20px 0; }
-  .works-bg-text { font-family: 'Druk Condensed', sans-serif; font-size: clamp(60px, 12vw, 140px); color: transparent; -webkit-text-stroke: 1px rgba(255,184,0,.5); letter-spacing: 8px; line-height: 1; user-select: none; }
+  .works-bg-text { font-family: 'Druk Condensed', sans-serif; font-size: clamp(32px, 8vw, 120px); color: var(--gold); letter-spacing: 4px; line-height: 1; user-select: none; white-space: nowrap; }
   .works-script-over { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%); font-family: 'Caveat', cursive; font-size: clamp(22px, 4vw, 42px); color: var(--gold); white-space: nowrap; }
 
   /* ── ACCORDION CARDS ── */
@@ -759,11 +770,11 @@ const style = `
   .about-section { background: transparent; }
   .about-grid { display: grid; grid-template-columns: 0.85fr 1.4fr; gap: 100px; align-items: center; }
   .about-avatar-wrap { display: flex; justify-content: center; align-items: center; position: relative; padding: 20px 0; min-height: 0; transform: translateX(-15%); }
-  .about-avatar-wrap::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 240px; height: 50px; background: radial-gradient(ellipse, rgba(255,184,0,.30) 0%, transparent 70%); filter: blur(12px); pointer-events: none; }
-  .about-avatar { width: clamp(200px, 28vw, 340px); max-height: 420px; object-fit: contain; animation: float-simple 5s ease-in-out infinite; filter: drop-shadow(0 30px 40px rgba(0,0,0,.5)); display: block; }
+  .about-avatar-wrap::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 360px; height: 50px; background: radial-gradient(ellipse, rgba(255,184,0,.30) 0%, transparent 70%); filter: blur(12px); pointer-events: none; }
+  .about-avatar { width: clamp(300px, 42vw, 510px); max-height: 630px; object-fit: contain; animation: float-simple 5s ease-in-out infinite; filter: drop-shadow(0 30px 40px rgba(0,0,0,.5)); display: block; }
   @keyframes float-simple { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
   .about-eyebrow { font-family: 'Century Gothic', sans-serif; font-size: 12px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; opacity: .7; }
-  .about-title { font-family: 'Druk Condensed', sans-serif; font-size: clamp(48px, 8vw, 100px); line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(255,184,0,.5); margin-bottom: 28px; paint-order: stroke fill; }
+  .about-title { font-family: 'Druk Condensed', sans-serif; font-size: clamp(48px, 8vw, 100px); line-height: 1; color: var(--gold); margin-bottom: 28px; }
   .about-text { font-size: 14px; line-height: 1.85; color: var(--muted); margin-bottom: 20px; }
 
   .contact-title { font-family: 'Druk Condensed', sans-serif; font-size: clamp(42px, 9vw, 110px); color: var(--gold); line-height: 1; margin-bottom: 40px; }
@@ -947,8 +958,13 @@ export default function MithunPortfolio() {
   const [c2dViewerIdx, setC2dViewerIdx] = useState(null); // fullscreen viewer index into CONCEPT_2D_GALLERY
   const [illViewerIdx, setIllViewerIdx] = useState(null); // fullscreen viewer index into ILLUSTRATIONS_GALLERY
   const [animViewerOpen, setAnimViewerOpen] = useState(false);
-  const animVideoRef = useRef(null);
-  const animHoverRef = useRef(false);
+  const [activeAnimVideo, setActiveAnimVideo] = useState(null);
+  const animVideoRef1 = useRef(null);
+  const animHoverRef1 = useRef(false);
+  const animVideoRef2 = useRef(null);
+  const animHoverRef2 = useRef(false);
+  const animVideoRef3 = useRef(null);
+  const animHoverRef3 = useRef(false);
   const sectionRefs = useRef({});
 
   useEffect(() => {
@@ -1373,62 +1389,171 @@ export default function MithunPortfolio() {
               /* ── ANIMATION WORKS — Cinematic Player ── */
               <>
                 <p className="kg-section-label">── Featured Animation</p>
-                <div
-                  style={{
-                    position: 'relative',
-                    width: '100%',
-                    aspectRatio: '16/9',
-                    borderRadius: 8,
-                    overflow: 'hidden',
-                    cursor: 'pointer',
-                    background: '#000',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
-                  }}
-                  onMouseEnter={() => {
-                    animHoverRef.current = true;
-                    if (animVideoRef.current) {
-                      animVideoRef.current.muted = true;
-                      animVideoRef.current.currentTime = 28;
-                      animVideoRef.current.play().catch(() => { });
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    animHoverRef.current = false;
-                    if (animVideoRef.current) {
-                      animVideoRef.current.pause();
-                    }
-                  }}
-                  onClick={() => {
-                    if (animVideoRef.current) animVideoRef.current.pause();
-                    setAnimViewerOpen(true);
-                  }}
-                >
-                  <video
-                    ref={animVideoRef}
-                    src={animationVideo}
-                    poster={animationImg}
-                    preload="none"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                    onTimeUpdate={(e) => {
-                      if (animHoverRef.current && e.target.currentTime >= 35) {
-                        e.target.currentTime = 28;
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20, width: '100%' }}>
+                  <div
+                    style={{
+                      position: 'relative',
+                      width: '100%',
+                      aspectRatio: '16/9',
+                      borderRadius: 8,
+                      overflow: 'hidden',
+                      cursor: 'pointer',
+                      background: '#000',
+                      boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
+                    }}
+                    onMouseEnter={() => {
+                      animHoverRef1.current = true;
+                      if (animVideoRef1.current) {
+                        animVideoRef1.current.muted = true;
+                        animVideoRef1.current.currentTime = 28;
+                        animVideoRef1.current.play().catch(() => { });
                       }
                     }}
-                  />
-                  <div style={{
-                    position: 'absolute', inset: 0,
-                    background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    pointerEvents: 'none', transition: 'background 0.3s'
-                  }}>
+                    onMouseLeave={() => {
+                      animHoverRef1.current = false;
+                      if (animVideoRef1.current) {
+                        animVideoRef1.current.pause();
+                      }
+                    }}
+                    onClick={() => {
+                      if (animVideoRef1.current) animVideoRef1.current.pause();
+                      setActiveAnimVideo(animationVideo);
+                      setAnimViewerOpen(true);
+                    }}
+                  >
+                    <video
+                      ref={animVideoRef1}
+                      src={animationVideo}
+                      poster={animationImg}
+                      preload="none"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      onTimeUpdate={(e) => {
+                        if (animHoverRef1.current && e.target.currentTime >= 35) {
+                          e.target.currentTime = 28;
+                        }
+                      }}
+                    />
                     <div style={{
-                      width: 72, height: 72, borderRadius: '50%', background: 'var(--gold)',
+                      position: 'absolute', inset: 0,
+                      background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      boxShadow: '0 4px 16px rgba(255,184,0,0.4)', transition: 'transform 0.2s'
+                      pointerEvents: 'none', transition: 'background 0.3s'
                     }}>
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="#111" style={{ marginLeft: 4 }}>
-                        <path d="M5 3l14 9-14 9V3z" />
-                      </svg>
+                      <div style={{
+                        width: 72, height: 72, borderRadius: '50%', background: 'var(--gold)',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        boxShadow: '0 4px 16px rgba(255,184,0,0.4)', transition: 'transform 0.2s'
+                      }}>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="#111" style={{ marginLeft: 4 }}>
+                          <path d="M5 3l14 9-14 9V3z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+                    <div
+                      style={{
+                        position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: 8,
+                        overflow: 'hidden', cursor: 'pointer', background: '#000', boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
+                      }}
+                      onMouseEnter={() => {
+                        animHoverRef2.current = true;
+                        if (animVideoRef2.current) {
+                          animVideoRef2.current.muted = true;
+                          animVideoRef2.current.currentTime = 0;
+                          animVideoRef2.current.play().catch(() => { });
+                        }
+                      }}
+                      onMouseLeave={() => {
+                        animHoverRef2.current = false;
+                        if (animVideoRef2.current) animVideoRef2.current.pause();
+                      }}
+                      onClick={() => {
+                        if (animVideoRef2.current) animVideoRef2.current.pause();
+                        setActiveAnimVideo(showreelVideo);
+                        setAnimViewerOpen(true);
+                      }}
+                    >
+                      <video
+                        ref={animVideoRef2}
+                        src={`${showreelVideo}#t=0.1`}
+                        preload="metadata"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        onTimeUpdate={(e) => {
+                          if (animHoverRef2.current && e.target.currentTime >= 10) {
+                            e.target.currentTime = 0;
+                          }
+                        }}
+                      />
+                      <div style={{
+                        position: 'absolute', inset: 0,
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        pointerEvents: 'none', transition: 'background 0.3s'
+                      }}>
+                        <div style={{
+                          width: 48, height: 48, borderRadius: '50%', background: 'var(--gold)',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          boxShadow: '0 4px 16px rgba(255,184,0,0.4)', transition: 'transform 0.2s'
+                        }}>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="#111" style={{ marginLeft: 3 }}>
+                            <path d="M5 3l14 9-14 9V3z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      style={{
+                        position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: 8,
+                        overflow: 'hidden', cursor: 'pointer', background: '#000', boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
+                      }}
+                      onMouseEnter={() => {
+                        animHoverRef3.current = true;
+                        if (animVideoRef3.current) {
+                          animVideoRef3.current.muted = true;
+                          animVideoRef3.current.currentTime = 0;
+                          animVideoRef3.current.play().catch(() => { });
+                        }
+                      }}
+                      onMouseLeave={() => {
+                        animHoverRef3.current = false;
+                        if (animVideoRef3.current) animVideoRef3.current.pause();
+                      }}
+                      onClick={() => {
+                        if (animVideoRef3.current) animVideoRef3.current.pause();
+                        setActiveAnimVideo(kumariTrailerVideo);
+                        setAnimViewerOpen(true);
+                      }}
+                    >
+                      <video
+                        ref={animVideoRef3}
+                        src={`${kumariTrailerVideo}#t=0.1`}
+                        preload="metadata"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        onTimeUpdate={(e) => {
+                          if (animHoverRef3.current && e.target.currentTime >= 10) {
+                            e.target.currentTime = 0;
+                          }
+                        }}
+                      />
+                      <div style={{
+                        position: 'absolute', inset: 0,
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        pointerEvents: 'none', transition: 'background 0.3s'
+                      }}>
+                        <div style={{
+                          width: 48, height: 48, borderRadius: '50%', background: 'var(--gold)',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          boxShadow: '0 4px 16px rgba(255,184,0,0.4)', transition: 'transform 0.2s'
+                        }}>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="#111" style={{ marginLeft: 3 }}>
+                            <path d="M5 3l14 9-14 9V3z" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1517,11 +1642,14 @@ export default function MithunPortfolio() {
       )}
 
       {/* ── FULLSCREEN VIDEO VIEWER — Animation Works ── */}
-      {animViewerOpen && (
+      {animViewerOpen && activeAnimVideo && (
         <div className="kg-viewer" style={{ background: '#000', zIndex: 2000 }}>
-          <button className="kg-viewer-close" onClick={() => setAnimViewerOpen(false)} style={{ zIndex: 2001 }}>✕</button>
+          <button className="kg-viewer-close" onClick={() => {
+             setAnimViewerOpen(false);
+             setActiveAnimVideo(null);
+          }} style={{ zIndex: 2001 }}>✕</button>
           <video
-            src={animationVideo}
+            src={activeAnimVideo}
             controls
             autoPlay
             style={{ width: '100%', height: '100%', maxHeight: '100vh', objectFit: 'contain' }}
